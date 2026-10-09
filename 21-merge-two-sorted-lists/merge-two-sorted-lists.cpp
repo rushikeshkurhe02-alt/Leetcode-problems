@@ -18,24 +18,9 @@ public:
         if(list2 == NULL ){
             return list1;
         }
-        if(list1 == NULL && list2 == NULL){
-            return NULL;
-        }
+       
         ListNode *temp1 = list1;
         ListNode *temp2 = list2;
-       int  count1 = 0;
-        int count2 = 0;
-        while(temp1 != NULL){
-             count1++;
-             temp1 = temp1->next;
-            
-        }
-         while(temp2 != NULL){
-             count2++;
-             temp2 = temp2->next;
-            
-        }
-
         vector<int> arr1, arr2;
 
          temp1 = list1;
