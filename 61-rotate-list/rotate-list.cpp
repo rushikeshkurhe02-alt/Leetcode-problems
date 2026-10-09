@@ -28,9 +28,9 @@ public:
          }
         ListNode *curr = head;
         ListNode *pre = NULL;
-        k = k % count;
-        int steps = count - k;
-         while(steps--){
+        // int steps = count - k;
+        count = count - k;
+         while(count--){
             pre = curr;
             curr = curr->next;
         }
